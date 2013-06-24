@@ -1,0 +1,40 @@
+body {
+	font-family: sans-serif;
+	list-style: none;
+}
+
+ul {
+	font-weight: bold;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active, a:visited, a:link{
+	color:black;
+}
+
+a:hover {
+	color:gray;
+}
+h3 {
+	font-size: 10pt;
+	line-height: .2em;
+}
+
+h2 {
+	font-family:helvetica;
+	font-size: 20pt;
+	line-height: .2em;
+}
+
+article {
+	padding-top: .75em;
+	padding-bottom: .75em;
+}
+
+footer {
+	font-weight: bold;
+}
