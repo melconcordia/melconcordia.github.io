@@ -1,6 +1,16 @@
 body {
 	font-family: sans-serif;
 	list-style: none;
+	padding: 1em;
+}
+
+@font-face {
+	font-family: League-Gothic;
+	src: url('type/LeagueGothic-Regular-webfont.otf');
+ 	src: url('type/LeagueGothic-Regular-webfont.eot') format('embedded-opentype'),
+    url('type/LeagueGothic-Regular-webfont.woff') format('woff'),
+    url('type/LeagueGothic-Regular-webfont.ttf') format('truetype'),
+    url('type/LeagueGothic-Regular-webfont.svg') format('svg');
 }
 
 ul {
@@ -8,31 +18,70 @@ ul {
 	list-style-type: none;
 }
 
+#main-nav, #logo {
+	clear:both;
+}
+
+#main-nav ul li {
+	display:inline;
+	float:right;
+	padding: 0 10px;
+	font-size: 18px;
+}
+
+#logo {
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+aside nav ul {
+	line-height:50px;
+	font-size: 18px;
+}
+
 a {
 	text-decoration: none;
 }
 
-a:active, a:visited, a:link{
+a:active, a:visited, a:link {
 	color:black;
 }
 
 a:hover {
 	color:gray;
 }
+
 h3 {
 	font-size: 10pt;
-	line-height: .2em;
 }
 
 h2 {
-	font-family:helvetica;
-	font-size: 20pt;
-	line-height: .2em;
+	font-family:League-Gothic;
+	font-size: 30pt;
+	text-transform:uppercase;
 }
 
 article {
 	padding-top: .75em;
 	padding-bottom: .75em;
+}
+
+aside {
+	float:left;
+	width: 30%;
+}
+
+#archp {
+	font-weight:normal;
+}
+
+#entries {
+	float:right;
+	width:60%;
+	padding-top: 10px;
 }
 
 footer {
