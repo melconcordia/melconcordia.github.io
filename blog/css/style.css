@@ -56,12 +56,15 @@ a:hover {
 
 h3 {
 	font-size: 10pt;
+	margin: 0;
 }
 
 h2 {
 	font-family:League-Gothic;
 	font-size: 30pt;
 	text-transform:uppercase;
+	font-weight:normal;
+	margin: 0;
 }
 
 article {
@@ -74,8 +77,22 @@ aside {
 	width: 30%;
 }
 
-#archp {
+#zerop {
+	float:right;
+	width: 45%;
+}
+
+#onep {
+	width: 45%;
+}
+
+#twop {
+	width: 45%;
 	font-weight:normal;
+}
+
+span {
+	font-weight:bold;
 }
 
 #entries {
