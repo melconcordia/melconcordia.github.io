@@ -32,6 +32,13 @@ nav li {
 	list-style: none;
 }
 
+nav, footer {
+	margin: 0 -500%;
+	padding: 0 500%;
+	background: #271209;
+	opacity: .9;
+}
+
 a:active, a:visited, a:link {
 	color:#B89e77;
 	text-decoration: none;
@@ -89,4 +96,5 @@ footer p {
 	background-color:#271209; 
 	text-align: center;
 	font-style:normal;
+	padding: .5em;
 }
