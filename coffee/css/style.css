@@ -1,5 +1,6 @@
 body {
 	font-family: times;
+	background-color: #271209;
 }
 
 #container {
@@ -36,7 +37,6 @@ nav, footer {
 	margin: 0 -500%;
 	padding: 0 500%;
 	background: #271209;
-	opacity: .9;
 }
 
 a:active, a:visited, a:link {
@@ -84,6 +84,7 @@ h1 {
 
 .main-content {
 	padding: 2%;
+	background-color: white;
 } 
 
 #big-beans, #latte {

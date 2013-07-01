@@ -7,10 +7,10 @@ body {
 @font-face {
 	font-family: League-Gothic;
 	src: url('type/LeagueGothic-Regular-webfont.otf');
- 	src: url('type/LeagueGothic-Regular-webfont.eot') format('embedded-opentype'),
-    url('type/LeagueGothic-Regular-webfont.woff') format('woff'),
-    url('type/LeagueGothic-Regular-webfont.ttf') format('truetype'),
-    url('type/LeagueGothic-Regular-webfont.svg') format('svg');
+	src: url('type/LeagueGothic-Regular-webfont.eot') format('embedded-opentype'),
+	url('type/LeagueGothic-Regular-webfont.woff') format('woff'),
+	url('type/LeagueGothic-Regular-webfont.ttf') format('truetype'),
+	url('type/LeagueGothic-Regular-webfont.svg') format('svg');
 }
 
 ul {
@@ -26,7 +26,7 @@ ul {
 	display:inline;
 	float:right;
 	padding: 0 10px;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 #logo {
@@ -39,7 +39,7 @@ ul {
 
 aside nav ul {
 	line-height:50px;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 a {
@@ -55,13 +55,13 @@ a:hover {
 }
 
 h3 {
-	font-size: 10pt;
+	font-size: .75em;
 	margin: 0;
 }
 
-h2 {
+h2, span {
 	font-family:League-Gothic;
-	font-size: 30pt;
+	font-size: 2.5em;
 	text-transform:uppercase;
 	font-weight:normal;
 	margin: 0;
@@ -103,4 +103,9 @@ span {
 
 footer {
 	font-weight: bold;
+}
+
+@media (max-width: 720px) {
+	.tablet, #entries, #zerop, #onep, #twop {display:block; width:100%; clear:both;}
+	.tablet ul {line-height: 1.25em}
 }
