@@ -1,0 +1,24 @@
+body {
+	background-image: url("images/wood_floor.jpg");
+	padding: 2em;
+}
+
+#title {
+
+}
+
+#header_address {
+	text-align: right;
+}
+
+#main_nav {
+
+}
+
+#entry_photo {
+	width:20%;
+}
+
+footer {
+	text-align: center;
+}
