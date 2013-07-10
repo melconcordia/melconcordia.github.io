@@ -5,16 +5,20 @@ body {
 
 #container {
 	width:960px;
-	margin: 0 auto 0 auto;
+	margin: 0 auto;
 	background-color:white;
 	text-align: center;
 }
 
 header {
-		background-image: url('../images/beans.jpg');
-		text-align:center;
-		height: 250px;
-		background-repeat: no-repeat;
+	background-image: url('../images/beans.jpg');
+	text-align:center;
+	height: 250px;
+	background-repeat: no-repeat;
+}
+
+nav {
+	opacity: .8;
 }
 
 nav ul {
@@ -34,9 +38,21 @@ nav li {
 }
 
 nav, footer {
-	margin: 0 -500%;
-	padding: 0 500%;
 	background: #271209;
+}
+
+h1 {
+	color: #271209;
+	font-size: 16pt;
+	font-family: sans-serif;
+}
+
+footer p {
+	color: #B89e77;
+	background-color:#271209; 
+	text-align: center;
+	font-style:normal;
+	padding: .5em;
 }
 
 a:active, a:visited, a:link {
@@ -49,14 +65,13 @@ a:hover {
 	text-decoration: none;
 }
 
+.main-content {
+	padding: 2%;
+	background-color: white;
+} 
+
 .text-center {
 	text-align:center;
-}
-
-h1 {
-	color: #271209;
-	font-size: 16pt;
-	font-family: sans-serif;
 }
 
 .column1of2 {
@@ -82,20 +97,7 @@ h1 {
 	font-family: sans-serif;
 }
 
-.main-content {
-	padding: 2%;
-	background-color: white;
-} 
-
 #big-beans, #latte {
 	width: 50%;
 	height: 50%;
-}
-
-footer p {
-	color: #B89e77;
-	background-color:#271209; 
-	text-align: center;
-	font-style:normal;
-	padding: .5em;
 }
