@@ -1,0 +1,149 @@
+body {
+    font-family:sans-serif;
+    cursor:hand;
+    cursor:pointer;
+}
+
+ul { 
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+a:hover {
+	color:gray;
+}
+
+.main {
+    text-align: center;
+}
+
+#name {
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.main-title {
+    font-style: italic;
+    background-color:none;
+    padding: 0em 1em;
+    margin: 0 auto;
+	display:inline-block;
+    border-radius: 15px;
+    width:30%;
+    font-size: 2em;
+}
+
+.main-nav li {
+	list-style-type: none;
+    margin: .5% 0;
+    margin-top: 0;
+    display: inline-block;
+    width: 40%;
+    padding: .5em;
+    line-height: 1em;
+}
+
+
+
+
+
+
+/* styles specific to bns.html */
+
+/* styles specific to professional.html */
+
+/* this is what happens when you click (uses jquery) */
+#index.color {
+    background-image: url('../images/NZ.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* styles specific to startup.html */
+#startup.color {
+    background-image: url('../images/SIB.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sib_logo.color {
+    display:hidden;
+    background-image: url("../images/sib_logo.png");
+}
+
+/* styles specific to larch.html */
+#larch.color {
+    background-image: url('../images/LSU.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* styles specific to bnb.html */
+#bnb.color {
+    background-image: url('../images/bnb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+li.color a{
+    color: #0F4DA8;
+}
+
+li.color a:hover {
+    color:gray;
+}
+
+#name.color {
+	color: #0F4DA8;
+    font-family: "Fascinate Inline", cursive;
+}
+
+.main-nav li.color {
+    border-left: 3px solid #A66B00;
+    border-right: 3px solid #A66B00;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #fff173;
+    border-radius: 20px;
+    color: #0F4DA8;
+    font-family: "Kite One", sans-serif;
+}
+
+
+.main-title.color {
+    background-color: none;
+    color: #4b6e10;
+    border: .2em double #d96012;
+    border-radius:40px;
+    font-family: "Kite One", sans-serif;
+    font-style:none;
+    font-weight:normal;
+}
+
+footer.color a {
+    background-color: pink;
+    border-radius: 100px;
+    font-family: "Kite One", sans-serif;
+}
+
+.color, li.color a {
+    -webkit-transition: background-color 2s, color 1s;
+    -moz-transition: background-color 2s, color 1s;
+    -o-transition: background-color 2s, color 1s;
+    transition: background-color 2s, color 1s;
+}
+
+/* for different screen sizes */
+@media (max-width: 52em) {
+
+}
