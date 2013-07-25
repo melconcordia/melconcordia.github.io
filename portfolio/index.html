@@ -8,48 +8,95 @@
     <script type="text/javascript">
     $(document).ready(function(){
 
-        $('.main-title, .main-nav li, body, a:link, a:visited, #name, #index, footer').click(function () {
+        $('.main-title, .main-nav li, body, a:link, a:visited, #name, #index, #startup, #sib_logo, #larch, #bnb, #bns, .return, .content, footer').click(function () {
 
             $(this).addClass('color');
         });
     });
     </script>
 </head>
-<body id="index">
-<div class='main'>
-    <header>
-         <h1 id="name"> Melanie Concordia </h1>
+<body>
+    <div class='main' id="index">
 
-    </header>
-     <h1 class="main-title"> Here &#38; Now </h1>
+        <header>
+           <h1 class="headings" id="name"> Melanie Concordia </h1>
 
-    <ul class="main-nav">
-        <li><a href="startup.html"> StartUp Institute </a>
+       </header>
+       <section>
+           <h1 class="main-title"> Present </h1>
+
+           <ul class="main-nav">
+            <li><a href="#startup"> StartUp Institute </a>
+
+            </li><br>
+            <li><a href="http://www.melcooksandbakes.blogspot.com">I &#x2661; cooking </a>
+
+            </li>
+        </ul>
+        <h1 class="main-title"> Past </h1>
+
+        <ul class="main-nav">
+        </li><br>
+        <li><a href="#larch"> Landscape Architecture </a>
 
         </li><br>
-        <li><a href="http://www.melcooksandbakes.blogspot.com">I &#x2661; cooking </a>
+        <li><a href="#bnb"> Bike &#38; Build </a>
+
+        </li><br>
+        <li><a href="#bns"> Behavioral Neuroscience </a>
 
         </li>
     </ul>
-     <h1 class="main-title"> Before </h1>
-
-    <ul class="main-nav">
-        <li><a href="professional.html"> Professional </a>
-
-        </li><br>
-        <li><a href="larch.html"> Landscape Architecture </a>
-
-        </li><br>
-        <li><a href="bnb.html"> B&#38;B </a>
-
-        </li><br>
-        <li><a href="bns.html"> Behavioral Neuroscience </a>
-
-        </li>
-    </ul>
-    <footer>
-        <A HREF="index.html">&#x2661;</A>
-    </footer>
+    <A class= "return" HREF="#index">&#x2661;</A>
+</section>
 </div>
+
+<div class="main" id="startup">
+
+    <h1 class="headings" id="sib_logo"><a href="http://www.startupinstitute.com">StartUp Institute Boston </a></h1>
+    <section>
+        <p class="content"> Two month intensive startup training bootcamp with a Product &#38; Design concentration. <br> At the Startup Institute, I learned HTML5, CSS3, became acquainted with the Boston startup scene.</p>
+        <h2>Projects</h2>
+        <ul id="sib_proj" class="main-nav">
+            <li><a href="http://melanieconcordia.com/blog/index.html"> Blog Template</a> Built from an image.</li>
+            <li><A HREF="http://melanieconcordia.com/coffee/index.html">Coffe Shop Template</A> Built from an image.</li>
+            <li>Atwoods Tavern Re-design</li>
+            <li>Find a Phone Number, Bookmarklet</li>
+            <li><A HREF="http://cslab.bc.edu/~donohudb/possibleproject/">The Possible Project </a> 24 hour hackathon</li>
+        </ul>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</div>
+
+<div class="main" id="larch">
+
+    <h1 class="headings"><a href="http://design.lsu.edu/landscape/index.html/">Landscape Architecture Study </a></h1>
+    <section>
+        <p class="content"> During the fall of 2012 I completed 1 semester of MLA work at LSU.
+        </p>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</div>
+
+<div class='main' id="bnb">
+
+    <h1 class="headings"><a href="http://www.bikeandbuild.org">Bike &#38; Build</a></h1>
+    <section>
+        <p class="content"> During the summer of 2011, I cycled from Jacksonville, FL to Monterey, CA with 34 other individuals. The 78 day trip supported affordable housing organizations across the country.</p>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</div>
+
+<div class='main' id="bns">
+
+    <h1 class="headings">Behavioral Neuroscience Study</h1>
+    <section>
+        <p class="content"> In 2010 I graduated from Northeastern University with a BS in Behavioral Neuroscience. Here are some selected academic works. </p>
+        <img src= "../images/neurobio1.jpg" alt="Comparative Neurobiology Project Pg 1" width="10%"/><br><br>
+        <img src= "../images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/><br>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</div>
+
 </body>
 </html>

@@ -7,16 +7,22 @@
     <script type="text/javascript">
     $(document).ready(function(){
 
-        $('.main-title, .main-nav li, body, a:link, a:visited, #name, #startup, #sib_logo, footer').click(function () {
+        $('.main-title, .main-nav li, body, a:link, a:visited, #name, #startup, #sib_logo, footer, #siblogo').click(function () {
 
             $(this).addClass('color');
+
         });
+         $('#sib_logo').click(function(){
+            $(this).hide();
+            $('#siblogo').show();
+         });
     });
     </script>
 </head>
 <body id="startup">
 <div class="main">
-    <h1 id="sib_logo"><a href="http://www.startupinstitute.com">StartUp Institute Boston </a></h1>
+    <h1 id="sib_logo"><a href="http://www.startupinstitute.com"> StartUp Institute Boston </a></h1>
+    <a id="siblogo" href="http://www.startupinstitute.com"><img src="images/sib_logo.png"/></a>
     <p> 2 Month Intensive Startup Training Camp with a concentration on Product &#38; Design </p>
     <h2>Projects</h2>
     <ul>

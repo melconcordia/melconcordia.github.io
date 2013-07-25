@@ -4,13 +4,6 @@ body {
     cursor:pointer;
 }
 
-section {
-    width: 50%;
-    margin: 0 auto;
-    height: 600px;
-}
-
-
 ul { 
 	padding: 0;
 }
@@ -26,12 +19,26 @@ a:hover {
 	color:gray;
 }
 
-img {
-    width: 50%;
+.main {
+    text-align: center;
+    width:90%;
+    height:90%;
+    position: absolute;
+}
+/* stuff I am testing to get horiz scroll */
+.test {
+    list-style-type: none;
+    display:inilne;
+
 }
 
-.main {
-    text-align: left;
+#startup {
+    margin-right: -40%;
+}
+
+#name {
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 .main-title {
@@ -49,43 +56,28 @@ img {
 	list-style-type: none;
     margin: .5% 0;
     margin-top: 0;
+    display: inline-block;
+    width: 40%;
     padding: .5em;
     line-height: 1em;
 }
 
-.headings {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 10%;
+
+#siblogo {
+    display:none;
 }
 
-.return {
-    text-align: center;
-}
 
-#name {
-    text-transform: uppercase;
-    font-size: 3em;
-}
 
-#sib_proj {
-    list-style-type: none;
-}
 
-#index, #larch, #sib, #bns, #bnb, #startup {
-    border-bottom: 3px solid white;
-}
+/* styles specific to bns.html */
+
+/* styles specific to professional.html */
 
 /* this is what happens when you click (uses jquery) */
-#index.color {
-    background-image: url('../images/NZ.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-/* styles specific to startup */
+
+/* styles specific to startup.html */
 #startup.color {
     background-image: url('../images/SIB.jpg');
     background-size: cover;
@@ -94,11 +86,18 @@ img {
 }
 
 #sib_logo.color {
-    display:hidden;
+    display:none;
     background-image: url("../images/sib_logo.png");
 }
 
-/* styles specific to larch */
+/* STILL A WORK IN PROGRESS
+---
+#siblogo.color {
+    background-color: white;
+}
+---
+*/
+/* styles specific to larch.html */
 #larch.color {
     background-image: url('../images/LSU.jpg');
     background-size: cover;
@@ -106,7 +105,7 @@ img {
     background-position: center;
 }
 
-/* styles specific to bnb */
+/* styles specific to bnb.html */
 #bnb.color {
     background-image: url('../images/bnb.jpg');
     background-size: cover;
@@ -114,43 +113,68 @@ img {
     background-position: center;
 }
 
-/* styles specific to bns */
+/* index.html or general styles */
 
-
-/* general styles */
+#index.color {
+    background-image: url('../images/NZ.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 li.color a{
-    color: white;
+    color: #DD9944;
 }
 
 li.color a:hover {
     color:gray;
 }
 
+#name.color {
+	color: #DD9944;
+    font-family: "Fascinate Inline", cursive;
+}
+
 .main-nav li.color {
-    border-left: 3px solid #A66B00;
+    border-left: 3px solid #554433;
+    border-right: 3px solid #554433;
     border-top: 0;
     border-bottom: 0;
-    background-color: none;
+    background-color: #667799;
     border-radius: 20px;
+    color: #0F4DA8;
     font-family: "Kite One", sans-serif;
 }
 
+#bnb_title.color {
+    color:#132643;
+    background-color: none;
+    border-bottom: #FFFFFF;
+}
+
+#bnb_info.color {
+    background-color: #CCD3DD;
+    color: #204680;
+}
+
+#title1.color, #title2.color {
+    background-color: #BB6633;
+    color: #BBCCDD;
+    border: .2em double #554433;
+}
+
 .main-title.color {
-    background-color: white, 0.6;
-    color: white;
-    /*border: .2em double #d96012;*/
+    background-color: #BB6633;
+    color: #BBCCDD;
+    border: .2em double #554433;
     border-radius:40px;
     font-family: "Kite One", sans-serif;
     font-style:none;
     font-weight:normal;
 }
-.content.color {
-    color: white;
-}
 
-.return.color a {
-    color: white;
+footer.color a {
+    background-color: pink;
     border-radius: 100px;
     font-family: "Kite One", sans-serif;
 }
@@ -160,11 +184,6 @@ li.color a:hover {
     -moz-transition: background-color 2s, color 1s;
     -o-transition: background-color 2s, color 1s;
     transition: background-color 2s, color 1s;
-}
-
-#name.color {
-    color: white;
-    font-family: "Fascinate Inline", cursive;
 }
 
 /* for different screen sizes */
