@@ -1,14 +1,114 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Melanie Concordia's Portfolio Website</title>
-	</head>
-	<body>
-		<h1>Melanie Concordia</h1>
-		<img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/180065_1646282596708_7597993_n.jpg" alt="This is Me" height="400px">
-		<p>I enjoy exploring other cultures through food, travel, and social interaction. Interested in everything outdoors and creative, you might find me at home baking artisan bread or out on a backcountry excursion.</p>
-		<p>I graduated in 2010 with a bachelor's degree in Behavioral Neuroscience. After, I went from building affordable houses and cycling across the Southern US one summer to ski instructing in Montana in the winter. I have since turned my attention to startups, hoping to enhance and utilize my skills in design, human behavior, and technology. I am self-taught in Photoshop, Illustrator, InDesign, HTML, CSS, and Javascript, and happily learning something new every day.</p>
-		<a href="http://melanieconcordia.com/blog/index.html"> I made a blog </a><br><br>
-		<a href="http://melanieconcordia.com/coffee/index.html"> I made a coffee shop site </a>
-	</body>
+<head>
+    <meta> <title> Melanie Concordia </title> </meta>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/blueberry.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/jquery.blueberry/jquery.blueberry.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.blueberry').blueberry();
+    });
+    </script>
+</head>
+<body>
+    <article class='main' id="index">
+        <section id="first">
+           <h1 class="headings" id="name"> Melanie Concordia </h1>
+           <div>
+           <h2 class="main-title"> Present </h1>
+               <ul class="main-nav">
+                <li><a href="#startup"> StartUp Institute </a>
+                </li><br>
+                <li><a href="http://www.melcooksandbakes.blogspot.com">I <span>&#x2661;</span> Cooking </a>
+                </li>
+            </ul>
+        </div>
+            <div>
+            <h2 class="main-title" id="past"> Past </h1>
+                <ul class="main-nav" id='nav2'>
+                </li><br>
+                <li><a href="#larch"> Landscape Architecture </a>
+
+                </li><br>
+                <li><a href="#bnb"> Bike &#38; Build </a>
+
+                </li><br>
+                <li><a href="#bns"> Behavioral Neuroscience </a>
+
+                </li>
+            </ul>
+            </div>
+            <A class= "return" HREF="#index">&#x2661;</A>
+        </section>
+        <section id="photo"><!-- <img url('../images/NZ.jpg')> -->
+        </section>
+    </article>
+    <hr>
+    <article class="main" id="startup">
+        <section id="second">
+            <h1 class="headings" id="sib_logo"><a href="http://www.startupinstitute.com">StartUp Institute Boston </a></h1>
+            <p class="content"> Two month startup training intensive with a concentration in Product &#38; Design. <br><br> At the Startup Institute, I learned HTML5, CSS3, JQuery, Javascript, and became familar with inline Ruby and Python, SASS, and Haml.</p>
+            <h2>Projects</h2>
+            <ul id="sib_proj" class="main-nav">
+                <li><a href="http://melanieconcordia.com/blog/index.html"> Blog Template</a> Built from an image.</li>
+                <li><A HREF="http://melanieconcordia.com/coffee/index.html">Coffe Shop Template</A> Built from an image.</li>
+                <li>Atwoods Tavern Website Mockups:<a href="http://melanieconcordia.com/atwoods/Atwoods_Desktop_Mockup.png"> Desktop,</a><a href="http://melanieconcordia.com/atwoods/Atwoods_Mobile_Mockup.png"> Mobile</a></li>
+                <li>Find a Phone Number, Javascript Bookmarklet</li>
+                <li><A HREF="http://cslab.bc.edu/~donohudb/possibleproject/">The Possible Project</a>, 24 hour hackathon</li>
+                <li><a href="http://beta.venuescope.com">VenueScope</a>, Startup Weekend Boston Project </li>
+            </ul>
+            <A class="return" HREF="#index">&#x2661;</A>
+        </section>
+        <section id="photo2"><!-- <img url('../images/SIB.jpg')> -->
+        </section>
+    </article>
+    <hr>
+    <article class="main" id="larch">
+       <section class="blueberry">
+        <ul class="slides" id="larchslides">
+            <li><img src="images/Concordia_Melanie_pr1.6_drawing_finalpanel_03.jpg" alt="Bonneville Salt Flats, UT" width="10%" title="Bonneville Salt Flats, UT"/></li><br>
+            <li><img src="images/Concordia_Melanie_pr1.6_model_container_01.jpg" alt="Box Model" width="10%"/></li>
+            <li><img src="images/Studio_Box_Axo.jpg" alt="Box Sketch" width="10%"/></li>
+            <li><img src="images/Carved_Book.jpg" alt="Model: Gunnison National Park, CO" width="10%"/></li>
+            <li><img src="images/CAD_Valley_Linework.jpg" alt="CAD Valley Linework" width="10%"/></li>
+            <li><img src="images/Perspective_Sections.png" alt="Valley Sections in Perspective" width="10%"/></li>
+            <li><img src="images/plan.jpg" alt="Machine Plan" width="10%"/></li>
+            <li><img src="images/Tools_Week_9.jpg" alt="Field Sketch, Water Systems" width="10%"/></li>
+            <li><img src="images/Tools_Live_Oak_Combined.jpg" alt="Live Oak Sketch" width="10%"/></li>
+        </ul>
+    </section>
+    <section id="third">
+        <h1 class="headings"><a href="http://design.lsu.edu/landscape/index.html/">Landscape Architecture Study </a></h1>
+        <p class="content"> During the fall of 2012 I completed 1 semester of MLA work at LSU. <br><br> Class topics in Ecology, Landscape History, Land Representation, and interdisciplinary Studio.
+        </p>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</article>
+<hr>
+<article class='main' id="bnb">
+    <section id="fourth">
+        <h1 class="headings"><a href="http://www.bikeandbuild.org">Bike &#38; Build</a></h1>
+        <p class="content"> During the summer of 2011, I cycled from Jacksonville, FL to Monterey, CA with 34 other individuals. The 78 day trip supported affordable housing organizations across the country.</p>
+            <h2><a href="http://melbikesandbuilds.blogspot.com"> Bike &#38; Build Blog</a></h2>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+</article>
+<hr>
+<article class='main' id="bns">
+    <section id="fifth">
+        <h1 class="headings">Behavioral Neuroscience Study</h1>
+        <p class="content"> In 2010 I graduated from Northeastern University with a BS in Behavioral Neuroscience. Here are some selected academic works. </p>
+        <A class="return" HREF="#index">&#x2661;</A>
+    </section>
+    <section class="blueberry">
+        <ul class="slides">
+            <li><img src="images/neurobio1.jpg" alt="Comparative Neurobiology Project Pg 1" width="10%" title="The Cursian"/></li><br>
+            <li><!-- <a href="../images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/></a> --><img src="images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/></li>
+        </ul>
+    </section>
+</article>
+</body>
 </html>

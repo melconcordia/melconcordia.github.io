@@ -1,0 +1,282 @@
+body {
+    font-family:sans-serif;
+    cursor:hand;
+    cursor:pointer;
+}
+
+section {
+    width: 50%;
+    margin: 0 auto;
+    height: 600px;
+}
+
+
+ul { 
+	padding: 0;
+    margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+	font-size: 1em;
+}
+
+a:hover {
+	color:gray;
+}
+
+img {
+    width: 30%;
+}
+
+.main {
+    text-align: left;
+    border-bottom: 3px dotted #5A5A5A;
+}
+
+.main-title {
+    font-weight: 600;
+    background-color:none;
+    padding: .5em 1em;
+    margin: 0 auto;
+	display:inline-block;
+    border-radius: 15px;
+    width:30%;
+    font-size: 2em;
+}
+
+.main-nav li {
+	list-style-type: none;
+    margin-top: 0;
+    line-height: 1em;
+}
+
+div {
+    float: left;
+    padding-left: 15%;
+}
+#sib_proj li {
+    line-height: 2em;
+}
+.return {
+    text-align: center;
+/*    padding-left: 20%;*/
+    line-height: 2em;
+    color: pink;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.main-title, .main-nav {
+    padding-left: 10%;
+}
+
+a span { 
+    color: pink;
+}
+
+#past {
+    padding: 0;
+    padding-top: .5em;
+    padding-left: 10%;
+}
+
+#nav2 {
+    margin-top: -6px;
+}
+
+.headings {
+    text-transform: uppercase;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+#name {
+    font-size: 5em;
+
+}
+
+#sib_proj {
+    list-style-type: none;
+}
+
+
+/* this is what happens when you click (uses jquery) */
+/*#index.color {
+    background-image: url('../images/NZ.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* styles specific to startup */
+/*#startup.color {
+    background-image: url('../images/SIB.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+/*#sib_logo.color {
+    display:hidden;
+    background-image: url("../images/sib_logo.png");
+}*/
+
+/* styles specific to larch */
+/*#larch.color {
+    background-image: url('../images/LSU.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+/* styles specific to bnb */
+/*#bnb.color {
+    background-image: url('../images/bnb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+/* styles specific to bns */
+
+
+/* general styles */
+
+li.color a{
+    color: white;
+}
+
+li.color a:hover {
+    color:gray;
+}
+
+.main-nav li.color {
+    border-left: 3px solid #A66B00;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: none;
+    border-radius: 20px;
+    font-family: "Kite One", sans-serif;
+}
+
+.main-title.color {
+    background-color: white, 0.6;
+    color: white;
+    /*border: .2em double #d96012;*/
+    border-radius:40px;
+    font-family: "Kite One", sans-serif;
+    font-style:none;
+    font-weight:normal;
+}
+.content.color {
+    color: white;
+}
+
+.return.color a {
+    color: white;
+    border-radius: 100px;
+    font-family: "Kite One", sans-serif;
+}
+
+.color, li.color a {
+    -webkit-transition: background-color 2s, color 1s;
+    -moz-transition: background-color 2s, color 1s;
+    -o-transition: background-color 2s, color 1s;
+    transition: background-color 2s, color 1s;
+}
+
+#name.color {
+    color: white;
+    font-family: "Fascinate Inline", cursive;
+}
+
+/* for different screen sizes */
+@media (max-width: 52em) {
+
+}
+/*--------------------------------------------*/
+/* REDOING CSS, WILL OVERRIDE ALL ABOVE */
+* {
+box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/noise.png');
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main {
+    margin: auto;
+    clear: both;
+    margin-bottom: 2%;
+}
+
+#first, #photo, #fourth, #fifth {
+    float: left;
+}
+
+#first, #second, #third, #fourth, #fifth {
+    padding: 2%;
+}
+
+#bnb {
+    padding-top: 3%;
+}
+
+#photo {
+    background-image: url('../images/NZ.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#photo2 {
+    background-image: url('../images/SIB.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2%;
+}
+
+#second, #photo2, #third {
+    float: right;
+}
+
+#larch {
+    background-color: #C2A2D2;
+}
+
+#third {
+    background-color: none;
+}
+
+/* I dont know why this isnt showing */
+#fourth {
+    background-image: url('../images/bnb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    width: 100%;
+    margin-top: 3%;
+}
+ hr {
+    padding: 1%;
+    border: none;
+ }
+
+.blueberry {
+    max-width: 960px;
+    float: left;
+     }
+
+.blueberry #larchslides li img {
+        max-height: 600px;
+        width: auto;
+}

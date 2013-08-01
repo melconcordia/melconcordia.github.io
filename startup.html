@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+        $('.main-title, .main-nav li, body, a:link, a:visited, #name, #startup, #sib_logo, footer, #siblogo').click(function () {
+
+            $(this).addClass('color');
+
+        });
+         $('#sib_logo').click(function(){
+            $(this).hide();
+            $('#siblogo').show();
+         });
+    });
+    </script>
+</head>
+<body id="startup">
+<div class="main">
+    <h1 id="sib_logo"><a href="http://www.startupinstitute.com"> StartUp Institute Boston </a></h1>
+    <a id="siblogo" href="http://www.startupinstitute.com"><img src="images/sib_logo.png"/></a>
+    <p> 2 Month Intensive Startup Training Camp with a concentration on Product &#38; Design </p>
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="http://melanieconcordia.com/blog/index.html"> Blog Template</a></li>
+        <li><A HREF="http://melanieconcordia.com/coffee/index.html">Coffe Shop Template</A></li>
+        <li>Atwoods Tavern Re-design</li>
+    </ul>
+    <footer>
+        <A HREF="index.html">&#x2661;</A>
+    </footer>
+</div>
+</body>
+</html>
