@@ -196,10 +196,6 @@ li.color a:hover {
     font-family: "Fascinate Inline", cursive;
 }
 
-/* for different screen sizes */
-@media (max-width: 52em) {
-
-}
 /*--------------------------------------------*/
 /* REDOING CSS, WILL OVERRIDE ALL ABOVE */
 * {
@@ -254,6 +250,7 @@ body {
 
 #third {
     background-color: none;
+    height: 900px;
 }
 
 /* I dont know why this isnt showing */
@@ -276,7 +273,54 @@ body {
     float: left;
      }
 
-.blueberry #larchslides li img {
-        max-height: 600px;
-        width: auto;
+/* for different screen sizes */
+@media (max-width: 985px) {
+    section {
+        width: 100%;
+        font-size: .75em;
+        height: 400px;
+    }
+    .content {
+        font-size: 1.5em;
+    }
+        #third, .blueberry {
+        height: 250px;
+        float: right;
+        display: block;
+    }
+    .blueberry {
+    height: 750px;
+}
+}
+
+@media (max-width: 760px) {
+    section {
+        display: block;
+        float: left;
+        font-size: .5em;
+        height: 300px;
+    }
+    .content, .main-nav a{
+        font-size:.75em;
+    }
+    #first {
+        height: 200px;
+    }
+    #second {
+        height: 275px;
+    }
+    #third, .blueberry {
+        height: 150px;
+        float: right;
+        display: block;
+    }
+    .blueberry {
+    height: 750px;
+}
+    #fifth {
+        height: 100px;
+    }
+    #bnsslides {
+        height: 300px;
+    }
 }
