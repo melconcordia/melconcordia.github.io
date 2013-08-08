@@ -30,6 +30,11 @@ img {
     width: 30%;
 }
 
+.content {
+    font-size: 1.25em;
+    line-height: 1em;
+}
+
 .main {
     text-align: left;
     border-bottom: 3px dotted #5A5A5A;
@@ -50,11 +55,12 @@ img {
 	list-style-type: none;
     margin-top: 0;
     line-height: 1em;
+    font-size: 1.5em;
 }
 
 div {
     float: left;
-    padding-left: 15%;
+    padding-left: 10%;
 }
 #sib_proj li {
     line-height: 2em;
@@ -103,6 +109,11 @@ a span {
 
 #sib_proj {
     list-style-type: none;
+}
+
+#bike {
+    width: 50%;
+    text-align: left;
 }
 
 
@@ -274,10 +285,15 @@ body {
      }
 
 /* for different screen sizes */
-@media (max-width: 985px) {
+@media (min-width: 1044px and max-width: 1255px) {
+    div {
+        padding-left: 2%;
+    }
+}
+@media (max-width: 1045px) {
     section {
         width: 100%;
-        font-size: .75em;
+        font-size: 1em;
         height: 400px;
     }
     .content {
@@ -288,23 +304,32 @@ body {
         float: right;
         display: block;
     }
+    #second {
+        height: 400px;
+    }
     .blueberry {
     height: 750px;
 }
+    div {
+        padding-left:15%
+    }
+    }
 }
 
 @media (max-width: 760px) {
     section {
+        width: 100%;
         display: block;
         float: left;
         font-size: .5em;
         height: 300px;
     }
+
     .content, .main-nav a{
         font-size:.75em;
     }
     #first {
-        height: 200px;
+        height: 400px;
     }
     #second {
         height: 275px;
@@ -322,5 +347,9 @@ body {
     }
     #bnsslides {
         height: 300px;
+    }
+
+    div {
+        padding-left: 10%;
     }
 }
