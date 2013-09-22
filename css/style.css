@@ -1,7 +1,5 @@
 body {
     font-family:sans-serif;
-    cursor:hand;
-    cursor:pointer;
 }
 
 section {
@@ -17,7 +15,7 @@ ul {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 	color:black;
 	font-size: 1em;
 }
@@ -61,10 +59,17 @@ img {
 div {
     float: left;
     padding-left: 10%;
+    width: auto;
 }
+
 #sib_proj li {
     line-height: 2em;
 }
+
+#sib_proj a {
+    font-weight: bold;
+}
+
 .return {
     text-align: center;
 /*    padding-left: 20%;*/
@@ -305,7 +310,7 @@ body {
         display: block;
     }
     #second {
-        height: 400px;
+        height: 600px;
     }
     .blueberry {
     height: 750px;
@@ -316,7 +321,7 @@ body {
     }
 }
 
-@media (max-width: 760px) {
+@media (min-width: 0) and (max-width: 760px) {
     section {
         width: 100%;
         display: block;
@@ -325,8 +330,12 @@ body {
         height: 300px;
     }
 
+    #name {
+        font-size: 3em;
+    }
+
     .content, .main-nav a{
-        font-size:.75em;
+        font-size:.5em;
     }
     #first {
         height: 400px;
