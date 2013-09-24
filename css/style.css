@@ -1,13 +1,24 @@
+
+* {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
 body {
-    font-family:sans-serif;
+    background-image: url('../images/noise.png');
+    font-family: 'Titillium Web', sans-serif;
 }
 
 section {
     width: 50%;
     margin: 0 auto;
-    height: 600px;
+    height: 500px;
 }
 
+h2 {
+    margin-bottom: 0;
+}
 
 ul { 
 	padding: 0;
@@ -20,13 +31,22 @@ a {
 	font-size: 1em;
 }
 
-a:hover {
+a:hover{
 	color:gray;
+}
+
+a span { 
+    color: pink;
 }
 
 img {
     width: 30%;
 }
+
+ hr {
+    padding: 1%;
+    border: none;
+ }
 
 .content {
     font-size: 1.25em;
@@ -52,18 +72,15 @@ img {
 .main-nav li {
 	list-style-type: none;
     margin-top: 0;
-    line-height: 1em;
-    font-size: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.25em;
 }
 
-div {
+#welcome {
     float: left;
-    padding-left: 10%;
+    padding-left: 27%;
     width: auto;
-}
-
-#sib_proj li {
-    line-height: 2em;
+    line-height: 1em;
 }
 
 #sib_proj a {
@@ -72,30 +89,14 @@ div {
 
 .return {
     text-align: center;
-/*    padding-left: 20%;*/
     line-height: 2em;
     color: pink;
-    display: block;
     width: 100%;
     float: left;
 }
 
 .main-title, .main-nav {
     padding-left: 10%;
-}
-
-a span { 
-    color: pink;
-}
-
-#past {
-    padding: 0;
-    padding-top: .5em;
-    padding-left: 10%;
-}
-
-#nav2 {
-    margin-top: -6px;
 }
 
 .headings {
@@ -105,11 +106,22 @@ a span {
     text-align: center;
     margin: 0 auto;
     font-weight: 200;
+    line-height: 1em;
+    padding: 3%;
+}
+
+.headings a {
+    color: black;
+}
+
+.main {
+    margin: auto;
+    clear: both;
+    margin-bottom: 2%;
 }
 
 #name {
     font-size: 5em;
-
 }
 
 #sib_proj {
@@ -119,114 +131,13 @@ a span {
 #bike {
     width: 50%;
     text-align: left;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .5);
+    border-radius: 5;
+    padding: 3%;
 }
-
-
-/* this is what happens when you click (uses jquery) */
-/*#index.color {
-    background-image: url('../images/NZ.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* styles specific to startup */
-/*#startup.color {
-    background-image: url('../images/SIB.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}*/
-
-/*#sib_logo.color {
-    display:hidden;
-    background-image: url("../images/sib_logo.png");
-}*/
-
-/* styles specific to larch */
-/*#larch.color {
-    background-image: url('../images/LSU.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
-/* styles specific to bnb */
-/*#bnb.color {
-    background-image: url('../images/bnb.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}*/
-
-/* styles specific to bns */
-
-
-/* general styles */
-
-li.color a{
-    color: white;
-}
-
-li.color a:hover {
-    color:gray;
-}
-
-.main-nav li.color {
-    border-left: 3px solid #A66B00;
-    border-top: 0;
-    border-bottom: 0;
-    background-color: none;
-    border-radius: 20px;
-    font-family: "Kite One", sans-serif;
-}
-
-.main-title.color {
-    background-color: white, 0.6;
-    color: white;
-    /*border: .2em double #d96012;*/
-    border-radius:40px;
-    font-family: "Kite One", sans-serif;
-    font-style:none;
-    font-weight:normal;
-}
-.content.color {
-    color: white;
-}
-
-.return.color a {
-    color: white;
-    border-radius: 100px;
-    font-family: "Kite One", sans-serif;
-}
-
-.color, li.color a {
-    -webkit-transition: background-color 2s, color 1s;
-    -moz-transition: background-color 2s, color 1s;
-    -o-transition: background-color 2s, color 1s;
-    transition: background-color 2s, color 1s;
-}
-
-#name.color {
-    color: white;
-    font-family: "Fascinate Inline", cursive;
-}
-
-/*--------------------------------------------*/
-/* REDOING CSS, WILL OVERRIDE ALL ABOVE */
-* {
-box-sizing: border-box;
-}
-
-body {
-    background-image: url('../images/noise.png');
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.main {
-    margin: auto;
-    clear: both;
-    margin-bottom: 2%;
+#bnb_return {
+    width: 50%;
 }
 
 #first, #photo, #fourth, #fifth {
@@ -249,7 +160,7 @@ body {
 }
 
 #photo2 {
-    background-image: url('../images/SIB.jpg');
+    background-image: url('../images/SIB2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -260,16 +171,18 @@ body {
     float: right;
 }
 
-#larch {
-    background-color: #C2A2D2;
+#second, #photo2 {
+    height:700px;
+}
+
+#larch, #bns {
+    height: 5px;
 }
 
 #third {
-    background-color: none;
-    height: 900px;
+    height: 700px;
 }
 
-/* I dont know why this isnt showing */
 #fourth {
     background-image: url('../images/bnb.jpg');
     background-size: cover;
@@ -279,86 +192,115 @@ body {
     width: 100%;
     margin-top: 3%;
 }
- hr {
-    padding: 1%;
-    border: none;
- }
 
 .blueberry {
     max-width: 960px;
     float: left;
+
      }
 
 /* for different screen sizes */
-@media (min-width: 1044px and max-width: 1255px) {
-    div {
-        padding-left: 2%;
-    }
-}
+
 @media (max-width: 1045px) {
-    section {
+
+    section, #photo2 {
         width: 100%;
         font-size: 1em;
         height: 400px;
+        float: left;
     }
-    .content {
-        font-size: 1.5em;
-    }
-        #third, .blueberry {
+
+    #third {
+        clear: left;
         height: 250px;
         float: right;
-        display: block;
     }
-    #second {
-        height: 600px;
-    }
-    .blueberry {
-    height: 750px;
-}
-    div {
-        padding-left:15%
-    }
-    }
-}
 
-@media (min-width: 0) and (max-width: 760px) {
-    section {
-        width: 100%;
-        display: block;
-        float: left;
-        font-size: .5em;
-        height: 300px;
+    #second {
+        height: 628px;
     }
+
+
 
     #name {
         font-size: 3em;
     }
 
     .content, .main-nav a{
-        font-size:.5em;
+        font-size:1em;
     }
+
     #first {
-        height: 400px;
+        height: 350px;
     }
-    #second {
-        height: 600px;
-    }
-    #third, .blueberry {
-        height: 150px;
-        float: right;
-        display: block;
-    }
-    .blueberry {
-    height: 750px;
-}
+
     #fifth {
-        height: 100px;
+        height: 256px;
     }
+
     #bnsslides {
         height: 300px;
     }
 
-    div {
-        padding-left: 10%;
+    #welcome {
+        text-align: left;
+    }
+
+    .main-nav {
+        clear: left;
+    }
+
+    .blueberry {
+        clear: both;
+        float: center;
+        padding: 50px;
+        padding-top: 0px;
+        width: 80%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 1045px) and (min-width: 824px) {
+    #name {
+        font-size: 5em;
+    }
+
+    #first {
+        height: 400px;
+    }
+
+    #fifth {
+        height: 200px;
+    }
+
+    .blueberry {
+        height: 600px;
+    }
+}
+
+@media (max-width: 491px) {
+    #welcome {
+        line-height: 0em;
+    }
+
+    #name {
+        padding: 3%;
+    }
+
+    #first {
+        height: 300px;
+    }
+
+    #second {
+        height: 785;
+    }
+
+    #third {
+        height: 314px;
+    }
+
+    .blueberry {
+        width: 100%;
+        height: 334px;
     }
 }

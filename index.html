@@ -6,12 +6,29 @@
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/blueberry.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <!-- jquery responsive photo slider and smooth scroll -->
     <script src="js/jquery.blueberry/jquery.blueberry.js"></script>
     <script>
     $(document).ready(function() {
         $('.blueberry').blueberry();
+
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+               }, 1000);
+               return false;
+           }
+       }
+   });
     });
     </script>
+    <!-- Google Analytics -->
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -20,39 +37,26 @@
 
   ga('create', 'UA-44235965-2', 'melanieconcordia.com');
   ga('send', 'pageview');
-
     </script>
 </head>
 <body>
     <article class='main' id="index">
         <section id="first">
-           <h1 class="headings" id="name"> Melanie Concordia </h1>
-           <div>
-           <h2 class="main-title"> Present </h1>
-               <ul class="main-nav">
+         <h1 class="headings" id="name"> Melanie Concordia </h1>
+             <ul class="main-nav" id="welcome">
                 <li><a href="#startup"> StartUp Institute </a>
                 </li><br>
                 <li><a href="http://www.melcooksandbakes.blogspot.com">I <span>&#x2661;</span> Cooking </a>
-                </li>
-            </ul>
-        </div>
-            <div>
-            <h2 class="main-title" id="past"> Past </h1>
-                <ul class="main-nav" id='nav2'>
                 </li><br>
                 <li><a href="#larch"> Landscape Architecture </a>
-
                 </li><br>
                 <li><a href="#bnb"> Bike &#38; Build </a>
-
                 </li><br>
                 <li><a href="#bns"> Behavioral Neuroscience </a>
-
                 </li>
             </ul>
-            </div>
         </section>
-        <section id="photo"><!-- <img url('../images/NZ.jpg')> -->
+        <section id="photo">
         </section>
     </article>
     <hr>
@@ -69,9 +73,14 @@
                 <li><A HREF="http://cslab.bc.edu/~donohudb/possibleproject/">The Possible Project</a>, 24 hour hackathon project</li>
                 <li><a href="http://beta.venuescope.com">VenueScope</a>, Startup Weekend Boston Project </li>
             </ul>
+            <h2> See More </h2>
+            <ul class="main-nav">
+                <li><a href="http://www.be.net/melconcordia"> Behance</a></li>
+                <li><A HREF="http://github.com/melconcordia">GitHub</A></li>
+            </ul>
             <A class="return" HREF="#index">&#x2661;</A>
         </section>
-        <section id="photo2"><!-- <img url('../images/SIB.jpg')> -->
+        <section id="photo2">
         </section>
     </article>
     <hr>
@@ -96,26 +105,26 @@
         <A class="return" HREF="#index">&#x2661;</A>
     </section>
 </article>
-<hr>
+    <hr>
 <article class='main' id="bnb">
     <section id="fourth">
         <h1 class="headings"><a href="http://www.bikeandbuild.org">Bike &#38; Build</a></h1>
         <p class="content" id="bike"> During the summer of 2011, I cycled from Jacksonville, FL to Monterey, CA with 34 other individuals. The 78 day trip supported affordable housing organizations across the country. Prior to the trip, I fundraised $4,150 for the cause.</p>
             <h2><a href="http://melbikesandbuilds.blogspot.com"> Bike &#38; Build Blog</a></h2>
-        <A class="return" HREF="#index">&#x2661;</A>
+        <A class="return" id="bnb_return" HREF="#index">&#x2661;</A>
     </section>
 </article>
 <hr>
 <article class='main' id="bns">
     <section id="fifth">
         <h1 class="headings">Behavioral Neuroscience Study</h1>
-        <p class="content"> In 2010 I graduated from Northeastern University with a BS in Behavioral Neuroscience. Here are selected academic works. </p>
+        <p class="content"> In 2010 I graduated from Northeastern University with a BS in Behavioral Neuroscience. Here are a few project samples. </p>
         <A class="return" HREF="#index">&#x2661;</A>
     </section>
     <section class="blueberry" id="bnsslides">
         <ul class="slides">
             <li><img src="images/neurobio1.jpg" alt="Comparative Neurobiology Project Pg 1" width="10%" title="The Cursian"/></li><br>
-            <li><!-- <a href="../images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/></a> --><img src="images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/></li>
+            <li><img src="images/neurobio2.jpg" alt="Comparative Neurobiology Project Pg 2" width="10%"/></li>
         </ul>
     </section>
 </article>
