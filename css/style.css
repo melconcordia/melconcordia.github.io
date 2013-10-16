@@ -195,7 +195,7 @@ img {
     line-height: 1em;
 }
 
-#sib_proj a {
+#sib_proj a, #more_links {
     font-weight: bold;
 }
 
