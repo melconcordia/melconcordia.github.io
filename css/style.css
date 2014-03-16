@@ -50,7 +50,7 @@ img {
 
 .content {
     font-size: 1.25em;
-    line-height: 1em;
+    line-height: 1.1em;
 }
 
 .main {
@@ -115,6 +115,11 @@ img {
 
      }
 
+#contact {
+    border-bottom: none;
+    border-top: 3px dotted #5A5A5A;
+}
+
 #name {
     font-size: 5em;
 }
@@ -135,7 +140,6 @@ img {
 }
 
 #bnb_return {
-    width: 50%;
     clear: both;
     padding-top: 2%;
 }
@@ -193,11 +197,31 @@ img {
     margin-top: 3%;
 }
 
+#fifth {
+    height: 650px;
+}
+
+#sixth {
+    height: 205px;
+}
+
+#bnsslides {
+    height: 650px;
+}
+
 #welcome {
     float: left;
     padding-left: 27%;
     width: auto;
-    line-height: 1em;
+    line-height: .75em;
+}
+
+#end li {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1.5em;
+    font-size: 1.25em;
 }
 
 #welcome, #sib_proj a, #more_links, h2 {
@@ -234,7 +258,7 @@ img {
 
     #third {
         clear: left;
-        height: 250px;
+        height: 350px;
         float: right;
     }
 
@@ -274,11 +298,15 @@ img {
     }
 
     #first {
-        height: 400px;
+        height: 500px;
     }
 
     #fifth {
-        height: 200px;
+        height: 378px;
+    }
+
+    #sixth {
+        height: 235px;
     }
 }
 
@@ -286,7 +314,7 @@ img {
     
     .blueberry {
         width: 100%;
-        height: 334px;
+        height: 330px;
     }
 
     #welcome {
@@ -298,14 +326,31 @@ img {
     }
 
     #first {
-        height: 300px;
+        height: 350px;
     }
 
     #second {
-        height: 785;
+        height: 785px;
     }
 
     #third {
-        height: 314px;
+        height: 400px;
+    }
+
+    #fourth {
+        height: 450px;
+    }
+
+    #fifth  {
+        height: 400px;
+    }
+
+    #sixth {
+        height: 205px;
+    }
+
+    #bnsslides {
+        height: 350px;
+        display: block;
     }
 }
